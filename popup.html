@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/app.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <title>Whispers of Dhikr - نسمات الذكر</title>
+    </head>
+    <body>
+        <div id="main">
+            <!-- Header -->
+            <div class="app-header py-3 px-4 d-flex justify-content-between align-items-center mb-3 border-secondary border-bottom">
+                <h3 class="fw-bold mb-0 fs-6 text-end hstack gap-1">
+                    نسمات الذكر
+                    <pre class="mb-0 rounded-pill opacity-75" id="getVersion"><code>2.1.1</code></pre>
+                </h3>
+                <div class="d-flex align-items-center gap-3">
+                    <img src="/assets/img/Flag_of_Palestine.svg" class="flag-icon" />
+                    <div
+                        class="info-icon cs-success text-white rounded-circle shadow-sm"
+                        role="button"
+                        tabindex="1"
+                        data-bs-toggle="popover"
+                        data-bs-trigger="focus"
+                        data-bs-content="نسمات الذكر - هي إضافة لمتصفح كروم توفر تنبيهات فورية بأذكار يومية"
+                    >
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-area px-4 pb-4">
+                <!-- Notification Intervals -->
+                <div class="custom-card mb-4">
+                    <div class="card-body p-3">
+                        <h6 class="card-title text-end mb-3 fw-bold">الفترة بين الإشعارات</h6>
+
+                        <div class="d-flex flex-wrap justify-content-between gap-2 mb-3">
+                            <label class="checkmark_container">
+                                <input type="radio" name="interval" class="btn-check" id="interval_2" value="2" />
+                                <label class="option-btn btn btn-sm fw-semibold shadow-sm" for="interval_2">2 دقائق</label>
+                            </label>
+                            <label class="checkmark_container">
+                                <input type="radio" name="interval" class="btn-check" id="interval_5" value="5" />
+                                <label class="option-btn btn btn-sm fw-semibold shadow-sm" for="interval_5">05 دقائق</label>
+                            </label>
+                            <label class="checkmark_container">
+                                <input type="radio" name="interval" class="btn-check" id="interval_10" value="10" />
+                                <label class="option-btn btn btn-sm fw-semibold shadow-sm" for="interval_10">10 دقائق</label>
+                            </label>
+                        </div>
+
+                        <div class="d-flex flex-wrap justify-content-between gap-2">
+                            <label class="checkmark_container">
+                                <input type="radio" name="interval" class="btn-check" id="interval_20" value="20" />
+                                <label class="option-btn btn btn-sm fw-semibold shadow-sm" for="interval_20">20 دقيقة</label>
+                            </label>
+                            <label class="checkmark_container">
+                                <input type="radio" name="interval" class="btn-check" id="interval_30" value="30" />
+                                <label class="option-btn btn btn-sm fw-semibold shadow-sm" for="interval_30">30 دقيقة</label>
+                            </label>
+                            <label class="checkmark_container">
+                                <input type="radio" name="interval" class="btn-check" id="interval_60" value="60" />
+                                <label class="option-btn btn btn-sm fw-semibold shadow-sm" for="interval_60">60 دقيقة</label>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snooze Duration -->
+                <div class="custom-card mb-4">
+                    <div class="card-body p-3">
+                        <h6 class="card-title text-end mb-3 fw-bold">مدة الغفوة</h6>
+                        <select id="snoozeDuration" class="form-select border-0 text-end shadow-sm">
+                            <option value="0">بدون غفوة</option>
+                            <option value="1">ساعة واحدة</option>
+                            <option value="2">ساعتان</option>
+                            <option value="6">6 ساعات</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Save Button -->
+                <div class="d-flex justify-content-center my-4 w-100">
+                    <button id="saveButton" class="save-btn btn cs-success text-white rounded-pill px-5 py-2 shadow"><i class="fas fa-save me-2"></i> حفظ الإعدادات</button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="app-footer text-white fw-semibold py-3 text-center mt-auto">
+                <div class="container">
+                    <p class="mb-1 fw-semibold">صدقة جارية عن جميع موتانا وموتى المسلمين</p>
+                    <small class="fw-regular">اللهم اغفر للمؤمنين والمؤمنات الأحياء منهم والأموات</small>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/popup.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
